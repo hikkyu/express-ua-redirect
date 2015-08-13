@@ -1,0 +1,11 @@
+{
+  "env": {
+    "amd": true,
+    "node": true
+  },
+  "rules": {
+    "no-underscore-dangle": 0,
+    "strict": 0,
+    "quotes": [1, "single"]
+  }
+}
