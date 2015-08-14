@@ -4,8 +4,8 @@
   "description": "Express middleware to redirect to a route with conditions based on user agent informations",
   "main": "index.js",
   "repository": {
-    "type" : "git",
-    "url" : "https://github.com/world-gaming-fed/express-ua-redirect.git"
+    "type": "git",
+    "url": "https://github.com/world-gaming-fed/express-ua-redirect.git"
   },
   "scripts": {
     "pretest": "node_modules/.bin/eslint ./*.js ./lib/*.js ./lib/**/*.js",
@@ -23,22 +23,22 @@
     "middleware"
   ],
   "bugs": {
-    "url" : "https://github.com/world-gaming-fed/express-ua-redirect/issues",
-    "email" : "damien.berseron+npm@wgf.gg"
+    "url": "https://github.com/world-gaming-fed/express-ua-redirect/issues",
+    "email": "damien.berseron+npm@wgf.gg"
   },
   "author": "World Gaming Federation (Hikkyu)",
   "license": "ISC",
   "dependencies": {
-    "chai": "^3.2.0",
     "express": "^4.13.3",
     "lodash": "^3.10.1",
-    "mocha": "^2.2.5",
     "ua-parser-js": "^0.7.9"
   },
   "devDependencies": {
+    "chai": "^3.2.0",
     "coveralls": "^2.11.4",
     "eslint": "^1.1.0",
     "istanbul": "^0.3.17",
+    "mocha": "^2.2.5",
     "mocha-lcov-reporter": "0.0.2",
     "sinon": "^1.15.4",
     "sinon-chai": "^2.8.0"
