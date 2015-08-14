@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "pretest": "node_modules/.bin/eslint ./*.js ./lib/*.js ./lib/**/*.js",
-    "test": "node_modules/.bin/istanbul cover node_modules/.bin/_mocha ./*.spec.js **/*.spec.js **/**/*.spec.js"
+    "test": "node_modules/.bin/istanbul cover node_modules/.bin/_mocha --report lcov ./*.spec.js **/*.spec.js **/**/*.spec.js",
+    "coveralls": "cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js"
   },
   "keywords": [
     "express",
@@ -25,8 +26,10 @@
     "ua-parser-js": "^0.7.9"
   },
   "devDependencies": {
+    "coveralls": "^2.11.4",
     "eslint": "^1.1.0",
     "istanbul": "^0.3.17",
+    "mocha-lcov-reporter": "0.0.2",
     "sinon": "^1.15.4",
     "sinon-chai": "^2.8.0"
   }
