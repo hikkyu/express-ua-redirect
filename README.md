@@ -1,5 +1,9 @@
 # Express User Agent Redirect
 
+![](https://travis-ci.org/world-gaming-fed/express-ua-redirect.svg?branch=master)
+![](https://david-dm.org/world-gaming-fed/express-ua-redirect.svg)
+[![Coverage Status](https://coveralls.io/repos/world-gaming-fed/express-ua-redirect/badge.svg?branch=master&service=github)](https://coveralls.io/github/world-gaming-fed/express-ua-redirect?branch=master)
+
 Express UA Redirect is a simple configurable middleware to redirect to a route based on user agent for ExpressJS.
 It was create to warn the user that the browser is not compatible, but it can be used for other reasons.
 
