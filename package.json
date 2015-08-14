@@ -4,8 +4,8 @@
   "description": "Express middleware to redirect to a route with conditions based on user agent informations",
   "main": "index.js",
   "scripts": {
-    "pretest": "./node_modules/.bin/eslint ./*.js ./lib/*.js ./lib/**/*.js",
-    "test": "./node_modules/.bin/istanbul cover ./node_modules/.bin/_mocha ./*.spec.js **/*.spec.js **/**/*.spec.js"
+    "pretest": "node_modules/.bin/eslint ./*.js ./lib/*.js ./lib/**/*.js",
+    "test": "node_modules/.bin/istanbul cover node_modules/.bin/_mocha ./*.spec.js **/*.spec.js **/**/*.spec.js"
   },
   "keywords": [
     "express",
