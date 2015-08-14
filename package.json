@@ -26,7 +26,10 @@
     "url": "https://github.com/world-gaming-fed/express-ua-redirect/issues",
     "email": "damien.berseron+npm@wgf.gg"
   },
-  "author": "World Gaming Federation (Hikkyu)",
+  "author": {
+    "name": "Damien Berseron",
+    "email": "damien.berseron@wgf.gg"
+  },
   "license": "ISC",
   "dependencies": {
     "express": "^4.13.3",
