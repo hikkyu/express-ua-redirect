@@ -1,8 +1,12 @@
 {
   "name": "express-ua-redirect",
-  "version": "1.0.0",
-  "description": "Express middleware to redirect to a route with conditions based on user agent informations",
+  "version": "1.0.1",
+  "description": "Express UA Redirect is a simple configurable middleware for ExpressJS allowing you to redirect all routes to a configured route based on user agent restrictions.",
   "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/world-gaming-fed/express-ua-redirect.git"
+  },
   "scripts": {
     "pretest": "node_modules/.bin/eslint ./*.js ./lib/*.js ./lib/**/*.js",
     "test": "node_modules/.bin/istanbul cover node_modules/.bin/_mocha --report lcov ./*.spec.js **/*.spec.js **/**/*.spec.js",
@@ -14,21 +18,30 @@
     "ua",
     "not",
     "compatible",
-    "browser"
+    "browser",
+    "redirect",
+    "middleware"
   ],
-  "author": "World Gaming Federation (Hikkyu)",
+  "bugs": {
+    "url": "https://github.com/world-gaming-fed/express-ua-redirect/issues",
+    "email": "damien.berseron+npm@wgf.gg"
+  },
+  "author": {
+    "name": "Damien Berseron",
+    "email": "damien.berseron@wgf.gg"
+  },
   "license": "ISC",
   "dependencies": {
-    "chai": "^3.2.0",
     "express": "^4.13.3",
     "lodash": "^3.10.1",
-    "mocha": "^2.2.5",
     "ua-parser-js": "^0.7.9"
   },
   "devDependencies": {
+    "chai": "^3.2.0",
     "coveralls": "^2.11.4",
     "eslint": "^1.1.0",
     "istanbul": "^0.3.17",
+    "mocha": "^2.2.5",
     "mocha-lcov-reporter": "0.0.2",
     "sinon": "^1.15.4",
     "sinon-chai": "^2.8.0"

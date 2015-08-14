@@ -4,10 +4,10 @@
 ![](https://david-dm.org/world-gaming-fed/express-ua-redirect.svg)
 [![Coverage Status](https://coveralls.io/repos/world-gaming-fed/express-ua-redirect/badge.svg?branch=master&service=github)](https://coveralls.io/github/world-gaming-fed/express-ua-redirect?branch=master)
 
-Express UA Redirect is a simple configurable middleware to redirect to a route based on user agent for ExpressJS.
+Express UA Redirect is a simple configurable middleware for ExpressJS allowing you to redirect all routes to a configured route based on user agent restrictions.
 It was create to warn the user that the browser is not compatible, but it can be used for other reasons.
 
-Their is an example to redirect IE 8 and less user to `/incompatible-browser` route:
+Here is an example to redirect IE 8 and less user to `/incompatible-browser` route:
 ```js
 app.use(uaRedirect({
   browsers: {
@@ -19,7 +19,7 @@ app.use(uaRedirect({
 }));
 ```
 
-Their is also an evergreen mode to accept all automatic updated browsers and redirect all other:
+There is also an evergreen mode to accept all automatic updated browsers and redirect all other:
 ```js
 app.use(uaRedirect({
   browsers: {
@@ -48,12 +48,12 @@ app.use(uaRedirect(options));
 1. Proceed to installation has describe before
 2. Configure the `browsers` option
 3. Add a route to your server according to the option `redirectTo`
-4. In this route make a rendering of template of your choice
-5. Your done!
+4. Make what you will with this route
+5. You're done!
 
 ### Exemple
 
-If you want to redirect IE7 to `/update-your-browser` how rendering update-your-browser.ejs template.
+To redirect IE7 to `/update-your-browser` who it render `update-your-browser.ejs` template.
 
 #### server.js
 ```js
@@ -86,7 +86,7 @@ app.get('/update-your-browser', function(req, res) {
 #### update-your-browser.ejs
 ```ejs
 <h1>Oups your browser is not compatible</h1>
-<p>We recommend to update on browser happy...</p>
+<p>We recommend that you update your browser ...</p>
 ```
 
 ## options
@@ -108,7 +108,7 @@ app.get('/update-your-browser', function(req, res) {
 ```
 Browser name is not case sensitive an you can use all browser listed on ua-parser-js plugin documentation [here](https://github.com/faisalman/ua-parser-js#methods)
 
-Version condition can be a `String` or a `Number`. __With `+` or `-` indicator it must be a `String`__.
+Version condition can be `String` or `Number`. __With `+` or `-` indicator it must be a `String`__.
 
 ## Priority order
 If you specify an unauthorized browser __it will override authorized browser__ and __authorized override evergreen browsers__.
