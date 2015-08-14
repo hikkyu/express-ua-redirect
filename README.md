@@ -4,7 +4,7 @@
 ![](https://david-dm.org/world-gaming-fed/express-ua-redirect.svg)
 [![Coverage Status](https://coveralls.io/repos/world-gaming-fed/express-ua-redirect/badge.svg?branch=master&service=github)](https://coveralls.io/github/world-gaming-fed/express-ua-redirect?branch=master)
 
-Express UA Redirect is a simple configurable middleware allowing you to redirect traffic to a route based on user agent for ExpressJS.
+Express UA Redirect is a simple configurable middleware for ExpressJS allowing you to redirect all routes to a configured route based on user agent restrictions.
 It was create to warn the user that the browser is not compatible, but it can be used for other reasons.
 
 Here is an example to redirect IE 8 and less user to `/incompatible-browser` route:
@@ -48,13 +48,12 @@ app.use(uaRedirect(options));
 1. Proceed to installation has describe before
 2. Configure the `browsers` option
 3. Add a route to your server according to the option `redirectTo`
-4. Make this route point to the template of your choice
+4. Make what you will with this route
 5. You're done!
 
 ### Exemple
 
-If you want to redirect IE7 to `/update-your-browser` 
-how rendering update-your-browser.ejs template.
+To redirect IE7 to `/update-your-browser` who it render `update-your-browser.ejs` template.
 
 #### server.js
 ```js
