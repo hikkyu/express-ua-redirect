@@ -21,6 +21,7 @@
     "chai": "^3.2.0",
     "express": "^4.13.3",
     "lodash": "^3.10.1",
+    "mocha": "^2.2.5",
     "ua-parser-js": "^0.7.9"
   },
   "devDependencies": {
