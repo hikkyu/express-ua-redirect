@@ -32,9 +32,9 @@
   },
   "license": "ISC",
   "dependencies": {
-    "express": "^4.13.3",
-    "lodash": "^3.10.1",
-    "ua-parser-js": "^0.7.9"
+    "express": "^4.16.4",
+    "lodash": "^4.17.11",
+    "ua-parser-js": "^0.7.19"
   },
   "devDependencies": {
     "chai": "^3.2.0",
