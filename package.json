@@ -1,6 +1,6 @@
 {
   "name": "express-ua-redirect",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Express UA Redirect is a simple configurable middleware for ExpressJS allowing you to redirect all routes to a configured route based on user agent restrictions.",
   "main": "index.js",
   "repository": {
