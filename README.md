@@ -92,8 +92,8 @@ app.get('/update-your-browser', function(req, res) {
 ## options
 
 - browsers {Object}
-  - unauthorized {Object} Specify unauthorized browser(s) and is version with a browser object describe below
-  - authorized {Object} Specify authorized browser(s) and is version with a browser object describe below
+  - unauthorized {Object} Specify unauthorized browser(s) and its version with a browser object described below
+  - authorized {Object} Specify authorized browser(s) and its version with a browser object described below
   - evergreen {Boolean} Redirect all not evergreen browser
 - redirectTo {String} Route path
 

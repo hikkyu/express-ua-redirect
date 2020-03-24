@@ -30,9 +30,9 @@ describe('middleware:express-ua-redirect', function() {
   });
 
   afterEach(function() {
-    next.reset();
+    next.resetHistory();
     requestFunction = null;
-    res.redirect.reset();
+    res.redirect.resetHistory();
   });
 
   describe('should not redirect', function() {
@@ -100,5 +100,19 @@ describe('middleware:express-ua-redirect', function() {
       next.should.have.not.been.called;
       res.redirect.should.have.been.calledWith('/incompatible-browser');
     });
+
+    it.only('with \'evergreen\' mode and \'IE 11+\' set as authorized', function() {
+      req.headers['user-agent'] = 'Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko';
+      middleware({
+        browsers: {
+          unauthorized: {
+            IE: '11'
+          },
+          evergreen: true
+        }
+      })(req, res, next);
+      next.should.have.not.been.called;
+      res.redirect.should.have.been.calledWith('/incompatible-browser');
+    })
   });
 });
