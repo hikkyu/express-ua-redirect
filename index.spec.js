@@ -101,12 +101,12 @@ describe('middleware:express-ua-redirect', function() {
       res.redirect.should.have.been.calledWith('/incompatible-browser');
     });
 
-    it.only('with \'evergreen\' mode and \'IE 11+\' set as authorized', function() {
+    it('IE 11 with \'evergreen\' mode and \'IE 11-\' set as unauthorized', function() {
       req.headers['user-agent'] = 'Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko';
       middleware({
         browsers: {
           unauthorized: {
-            IE: '11'
+            IE: '11-'
           },
           evergreen: true
         }
